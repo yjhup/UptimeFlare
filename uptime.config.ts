@@ -151,7 +151,7 @@ const workerConfig: WorkerConfig = {
 const maintenances: MaintenanceConfig[] = [
   {
     // [Optional] Monitor IDs to be affected by this maintenance
-    monitors: ['foo_monitor', 'bar_monitor'],
+    monitors: ['tcp_monitor_hyhk', 'tcp_monitor_jpxz', 'tcp_monitor_jpyunyoo', 'tcp_monitor_jpsb2', 'tcp_monitor_jpsb3'],
     // [Optional] default to "Scheduled Maintenance" if not specified
     title: 'Test Maintenance',
     // Description of the maintenance, will be shown at status page
