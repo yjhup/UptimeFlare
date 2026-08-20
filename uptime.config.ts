@@ -3,8 +3,8 @@
 // For a full-featured example, please refer to `uptime.config.full.ts`
 
 // Don't edit this line
-//import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
-import { PageConfig, WorkerConfig } from './types/config'
+import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
+//import { PageConfig, WorkerConfig } from './types/config'
 
 const pageConfig: PageConfig = {
   // Title for your status page
@@ -147,7 +147,7 @@ const workerConfig: WorkerConfig = {
 // Also, related downtime notifications will be skipped (if any)
 // Of course, you can leave it empty if you don't need this feature
 
-// const maintenances: MaintenanceConfig[] = []
+const maintenances: MaintenanceConfig[] = []
 
 //const maintenances: MaintenanceConfig[] = [
   //{
@@ -168,5 +168,5 @@ const workerConfig: WorkerConfig = {
 //]
 
 // Don't edit this line
-//export { maintenances, pageConfig, workerConfig }
-export { pageConfig, workerConfig }
+export { maintenances, pageConfig, workerConfig }
+//export { pageConfig, workerConfig }
