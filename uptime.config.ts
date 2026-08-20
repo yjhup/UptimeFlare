@@ -7,40 +7,40 @@ import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 
 const pageConfig: PageConfig = {
   // Title for your status page
-  title: "lyc8503's Status Page",
+  title: "YJH's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'https://blog.lyc8503.net/', label: 'Blog' },
-    { link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
+    { link: 'https://github.com/YJHxx2561', label: 'GitHub' },
+    { link: 'https://yjhup.com/', label: 'Blog' },
+    { link: 'mailto:me@yjhup', label: 'Email Me', highlight: true },
   ],
 }
 
 const workerConfig: WorkerConfig = {
   // Define all your monitors here
-  monitors: [
+  //monitors: [
     // Example HTTP Monitor
-    {
+    //{
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'foo_monitor',
+      //id: 'foo_monitor',
       // `name` is used at status page and callback message
-      name: 'My API Monitor',
-      // `method` should be a valid HTTP Method
-      method: 'GET',
+      //name: 'My API Monitor',
+      // `method` .conshould be a valid HTTP Method
+      //method: 'GET',
       // `target` is a valid URL
-      target: 'https://example.com',
+      //target: 'https://example.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'This is a tooltip for this monitor',
+      //tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://example.com',
+      //statusPageLink: 'https://example.com',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
-      expectedCodes: [200],
+      //expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-      timeout: 10000,
+      //timeout: 10000,
       // [OPTIONAL] headers to be sent
-      headers: {
-        'User-Agent': 'Uptimeflare',
-        Authorization: 'Bearer YOUR_TOKEN_HERE',
+      //headers: {
+        //'User-Agent': 'Uptimeflare',
+        //Authorization: 'Bearer YOUR_TOKEN_HERE',
       },
       // [OPTIONAL] body to be sent (require POST/PUT/PATCH method)
       // body: 'Hello, world!',
@@ -57,14 +57,50 @@ const workerConfig: WorkerConfig = {
     },
     // Example TCP Monitor
     {
-      id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
+      id: 'tcp_monitor_hyhk',
+      name: '核云香港',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
-      tooltip: 'My production server SSH',
-      statusPageLink: 'https://example.com',
+      target: '156.225.28.235:22',
+      tooltip: 'heyun HK SSH',
+      statusPageLink: 'https://panel.hk.yjhup.com/1panel,
+      timeout: 5000,
+    },
+    {
+      id: 'tcp_monitor_jpxz',
+      name: '学长樱花',
+      method: 'TCP_PING',
+      target: '153.121.51.228:22',
+      tooltip: 'JPxz SSH',
+      statusPageLink: 'https://yjhup.com,
+      timeout: 5000,
+    },
+    {
+      id: 'tcp_monitor_jpyunyoo',
+      name: '云悠日本',
+      method: 'TCP_PING',
+      target: '23.176.40.201:22',
+      tooltip: 'JPyunyoo SSH',
+      statusPageLink: 'https://yjhup.com,
+      timeout: 5000,
+    },
+    {
+      id: 'tcp_monitor_jpsb2',
+      name: 'ACCK JPSB2',
+      method: 'TCP_PING',
+      target: '45.192.196.207:22',
+      tooltip: 'jpsb2 SSH',
+      statusPageLink: 'https://yjhup.com,
+      timeout: 5000,
+    },
+    {
+      id: 'tcp_monitor_jpsb3',
+      name: 'ACCK JPSB3',
+      method: 'TCP_PING',
+      target: '45.192.197.164:22',
+      tooltip: 'jpsb3 SSH',
+      statusPageLink: 'https://yjhup.com,
       timeout: 5000,
     },
   ],
