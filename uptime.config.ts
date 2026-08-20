@@ -41,7 +41,7 @@ const workerConfig: WorkerConfig = {
       //headers: {
         //'User-Agent': 'Uptimeflare',
         //Authorization: 'Bearer YOUR_TOKEN_HERE',
-      },
+      //},
       // [OPTIONAL] body to be sent (require POST/PUT/PATCH method)
       // body: 'Hello, world!',
       // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
@@ -54,7 +54,7 @@ const workerConfig: WorkerConfig = {
       // checkProxy: 'worker://weur',
       // [OPTIONAL] if true, the check will fallback to local if the specified proxy is down
       // checkProxyFallback: true,
-    },
+    //},
     // Example TCP Monitor
     {
       id: 'tcp_monitor_hyhk',
