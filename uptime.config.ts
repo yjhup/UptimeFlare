@@ -18,7 +18,7 @@ const pageConfig: PageConfig = {
 
 const workerConfig: WorkerConfig = {
   // Define all your monitors here
-  //monitors: [
+  monitors: [
     // Example HTTP Monitor
     //{
       // `id` should be unique, history will be kept if the `id` remains constant
@@ -64,7 +64,7 @@ const workerConfig: WorkerConfig = {
       // `target` should be `host:port` for tcp monitors
       target: '156.225.28.235:22',
       tooltip: 'heyun HK SSH',
-      statusPageLink: 'https://panel.hk.yjhup.com/1panel,
+      statusPageLink: 'https://panel.hk.yjhup.com/1panel',
       timeout: 5000,
     },
     {
@@ -73,7 +73,7 @@ const workerConfig: WorkerConfig = {
       method: 'TCP_PING',
       target: '153.121.51.228:22',
       tooltip: 'JPxz SSH',
-      statusPageLink: 'https://yjhup.com,
+      statusPageLink: 'https://yjhup.com',
       timeout: 5000,
     },
     {
@@ -82,7 +82,7 @@ const workerConfig: WorkerConfig = {
       method: 'TCP_PING',
       target: '23.176.40.201:22',
       tooltip: 'JPyunyoo SSH',
-      statusPageLink: 'https://yjhup.com,
+      statusPageLink: 'https://yjhup.com',
       timeout: 5000,
     },
     {
@@ -91,7 +91,7 @@ const workerConfig: WorkerConfig = {
       method: 'TCP_PING',
       target: '45.192.196.207:22',
       tooltip: 'jpsb2 SSH',
-      statusPageLink: 'https://yjhup.com,
+      statusPageLink: 'https://yjhup.com',
       timeout: 5000,
     },
     {
@@ -100,7 +100,7 @@ const workerConfig: WorkerConfig = {
       method: 'TCP_PING',
       target: '45.192.197.164:22',
       tooltip: 'jpsb3 SSH',
-      statusPageLink: 'https://yjhup.com,
+      statusPageLink: 'https://yjhup.com',
       timeout: 5000,
     },
   ],
