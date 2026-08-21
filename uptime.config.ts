@@ -141,7 +141,7 @@ const workerConfig: WorkerConfig = {
       //payload: {
       //  chat_id: 12345678,
       //  text: '$MSG',
-      },
+      //},
       // [Optional] timeout calling this webhook, in millisecond, default to 5000
       timeout: 10000,
     },
