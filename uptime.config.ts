@@ -58,13 +58,13 @@ const workerConfig: WorkerConfig = {
     //},
     // Example TCP Monitor
     {
-      id: 'tcp_monitor_hyhk',
+      id: 'tcp_monitor_sadhk',
       name: '伤心的云香港',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
       target: '38.76.172.145:22',
-      tooltip: 'heyun HK SSH',
+      tooltip: 'sadhk HK SSH',
       statusPageLink: 'https://panel.sad.hk.yjhup.com/1panel',
       timeout: 5000,
     },
