@@ -112,7 +112,7 @@ const workerConfig: WorkerConfig = {
     
     
     webhook: {
-      url: 'https://moepush.web.yjhup.com/api/push-group/iVVBmIpA5nfuINb2',
+      url: 'https://moepush.web.yjhup.com/api/push-group/qNv82P7r7wccgi1F',
       method: 'POST',
       payloadType: 'json',
       payload: {
