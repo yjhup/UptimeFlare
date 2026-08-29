@@ -59,13 +59,13 @@ const workerConfig: WorkerConfig = {
     // Example TCP Monitor
     {
       id: 'tcp_monitor_hyhk',
-      name: '核云香港',
+      name: '伤心的云香港',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '156.225.28.235:22',
+      target: '38.76.172.145:22',
       tooltip: 'heyun HK SSH',
-      statusPageLink: 'https://panel.hk.yjhup.com/1panel',
+      statusPageLink: 'https://panel.sad.hk.yjhup.com/1panel',
       timeout: 5000,
     },
     {
@@ -118,6 +118,20 @@ const workerConfig: WorkerConfig = {
      },
      headers: {
       "x-webhook-secret": "your-secret"
+    },
+      timeout: 10000,
+    },
+    
+    webhook: {
+      url: 'https://moepush.web.yjhup.com/api/push-group/iVVBmIpA5nfuINb2',
+      method: 'POST',
+      payloadType: 'json',
+      payload: {
+      "title": "Uptimeflare下线通知",
+      "content": "$MSG"
+     },
+     headers: {
+      "Content-Type": "application/json"
     },
 
 
