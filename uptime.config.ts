@@ -109,18 +109,7 @@ const workerConfig: WorkerConfig = {
   notification: {
     // [Optional] Notification webhook settings, if not specified, no notification will be sent
     // More info at Wiki: https://github.com/lyc8503/UptimeFlare/wiki/Setup-notification
-    webhook: {
-      url: 'https://webhookmail.web.yjhup.com/api/webhook',
-      method: 'POST',
-      payloadType: 'json',
-      payload: {
-      text: '$MSG'
-     },
-     headers: {
-      "x-webhook-secret": "your-secret"
-    },
-      timeout: 10000,
-    },
+    
     
     webhook: {
       url: 'https://moepush.web.yjhup.com/api/push-group/iVVBmIpA5nfuINb2',
